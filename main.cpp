@@ -4,11 +4,9 @@
 #include "Stack.h"
 
 void prnMenu(){
-	cout << "*******************************************" << endl;
 	cout<<"*******************************************"<<endl;
 	cout<<"* 1. 삽입    2. 삭제    3. 출력   4. 종료 *"<<endl;
 	cout<<"*******************************************"<<endl;
-	cout << "*******************************************" << endl;
 	cout<<endl;
 	cout<<"원하시는 메뉴를 골라주세요: ";
 }
@@ -16,17 +14,17 @@ void prnMenu(){
 int main(){
 	    	int mode, selectNumber;
 		int tmpItem;
-		LinkedList<int> *p;
+		LinkedList<double> *p;
 		bool flag = false;
 
 		cout<<"자료구조 선택(1: Stack, Other: Linked List): ";
 		cin>>mode;
 						    
 		if(mode == 1)
-			p = new Stack<int>();    // 정수를 저장하는 스택
+			p = new Stack<double>();    // 정수를 저장하는 스택
 			
 		else
-			p = new LinkedList<int>();
+			p = new LinkedList<double>();
 
 
 		do{
